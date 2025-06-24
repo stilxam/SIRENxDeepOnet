@@ -2,7 +2,8 @@
   description = "JAX + CUDA development shell using flakes";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    #nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -31,6 +32,8 @@
 	  seaborn
 	  dash
 	  scikit-learn
+	  pandas
+	  pandas-stubs
           #blackjax
         ]);
       in {
